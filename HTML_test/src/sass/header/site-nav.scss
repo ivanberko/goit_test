@@ -1,0 +1,8 @@
+.site-nav {
+  @include flex-aligning($al-it: flex-start);
+  min-width: 620px;
+
+  @media (max-width: 768px) {
+    min-width: 100%;
+  }
+}

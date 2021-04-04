@@ -1,0 +1,15 @@
+.copy {
+  color: $primary-black;
+  font-family: $font-montserrat;
+  font-size: sizeRem(14);
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    margin-bottom: sizeRem(20);
+  }
+}
+
+.copy__link {
+  color: $accent-lt-red;
+  text-decoration: none;
+}

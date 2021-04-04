@@ -1,0 +1,22 @@
+.site-title__btn--white {
+  @extend %button;
+  margin: 0 auto;
+  border: 3px solid $primary-white;
+  color: $primary-white;
+  font-family: $font-montserrat;
+  padding: sizeRem(10) sizeRem(32);
+  font-size: sizeRem(14);
+  font-weight: 700;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: $accent-lt-red;
+    border-color: $accent-lt-red;
+  }
+}
+
+.site-title__btn{
+  @media (max-width: 768px) {
+    padding-bottom: sizeRem(40);
+  }
+}

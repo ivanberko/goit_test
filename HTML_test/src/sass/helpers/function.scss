@@ -1,0 +1,3 @@
+@function sizeRem($size) {
+  @return $size / $size-content * 1rem;
+}

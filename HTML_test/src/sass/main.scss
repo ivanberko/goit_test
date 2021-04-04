@@ -1,0 +1,32 @@
+// HELPERS
+@import 'helpers/vars.scss';
+@import 'helpers/placeholder.scss';
+@import 'helpers/mixin.scss';
+@import 'helpers/function.scss';
+
+
+// BASE
+@import 'normalize.scss';
+@import 'base.scss';
+
+// HEADER
+@import 'header/header-base.scss';
+@import 'header/site-nav.scss';
+@import 'header/site-menu.scss';
+@import 'header/site-logo.scss';
+
+// BUTTON
+@import 'btn/menu-btn.scss';
+@import 'btn/main-title__btn.scss';
+
+// COMPONENTS
+@import 'components/site-title.scss';
+@import 'components/services-list.scss';
+@import 'components/team-list.scss';
+@import 'components/team-list__hidden.scss';
+
+
+// FOOTER
+@import 'footer/footer.scss';
+@import 'footer/copy.scss';
+@import 'footer/form-agreement.scss';

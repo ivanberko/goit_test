@@ -1,0 +1,84 @@
+.services-list {
+  @extend %list;
+  @include flex-aligning($j-cont: space-around);
+  flex-wrap: wrap;
+
+  &__icon--alarm::before {
+    background-image: url(../images/sprite/ALARM.svg);
+  }
+
+  &__icon--line::before {
+    background-image: url(../images/sprite/LINE_GRAPH.svg);
+  }
+
+  &__icon--computer::before {
+    background-image: url(../images/sprite/COMPUTER.svg);
+  }
+
+  &__icon--book::before {
+    background-image: url(../images/sprite/BOOK_2.svg);
+  }
+
+  &__icon--home::before {
+    background-image: url(../images/sprite/HOME.svg);
+  }
+
+  &__icon--image::before {
+    background-image: url(../images/sprite/IMAGE.svg);
+  }
+}
+
+.services-list__item {
+  padding-left: sizeRem(62);
+  width: 332px;
+  position: relative;
+  margin-bottom: sizeRem(100);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+  }
+
+  &:last-child {
+    @media (max-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &:nth-last-child(-n + 2) {
+    @media (min-width: 767px) and (max-width: 1023px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &:nth-last-child(-n + 3) {
+    @media (min-width: 1024px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 60%;
+  }
+}
+
+.services-list__title {
+  font-family: $font-montserrat;
+  font-size: sizeRem(14);
+  line-height: 1;
+  text-transform: uppercase;
+  color: $primary-black;
+  margin-bottom: sizeRem(20);
+}
+
+.services-list__desc,
+.team__desc {
+  font-family: $font-roboto;
+  font-size: sizeRem(15);
+  font-weight: 400;
+  color: $primary-grey;
+}

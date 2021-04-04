@@ -1,0 +1,33 @@
+.form-agreement {
+  display: flex;
+}
+
+.form-agreement__email {
+  width: 230px;
+  height: 40px;
+  border: 1px solid $accent-lt-grey;
+  background-color: $primary-white;
+  color: $primary-grey;
+  font-family: $font-roboto;
+  font-size: sizeRem(15);
+  font-weight: 400;
+  font-style: italic;
+  padding: sizeRem(14);
+  outline: none;
+}
+
+.form-agreement__btn {
+  @extend %button;
+  width: 150px;
+  height: 40px;
+  background-color: $primary-color-btn;
+  color: $primary-white;
+  font-family: $font-montserrat;
+  font-size: sizeRem(14);
+  font-weight: 700;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: #f38181;
+  }
+}

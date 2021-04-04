@@ -1,0 +1,39 @@
+.header {
+  min-height: 1000px;
+  margin-bottom: sizeRem(46);
+
+  @media (max-width: 768px) {
+    min-height: auto;
+  }
+}
+
+.banner {
+  background-image: url(../images/main-bg-min.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.902) 0%,
+    rgba(243, 129, 129, 0.902) 100%
+  );
+  min-height: 1000px;
+
+  @media (max-width: 768px) {
+    min-height: auto;
+  }
+}
+
+.header__container {
+  @include flex-aligning();
+  padding-top: sizeRem(36);
+  margin-bottom: sizeRem(164);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-top: sizeRem(26);
+    margin-bottom: sizeRem(80);
+  }
+}

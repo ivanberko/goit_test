@@ -1,0 +1,21 @@
+%button {
+  display: block;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  outline: none;
+  padding: 0;
+}
+
+%link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

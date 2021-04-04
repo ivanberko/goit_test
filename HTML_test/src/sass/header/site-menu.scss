@@ -1,0 +1,24 @@
+.site-menu {
+  @extend %list;
+  @include flex-aligning();
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.site-menu__link {
+  @extend %link;
+  color: $primary-white;
+  font-family: $font-montserrat;
+  font-size: sizeRem(14);
+  font-weight: 700;
+  padding-bottom: sizeRem(12);
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s linear, border-bottom 0.2s linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-lt-orange;
+    border-bottom: 3px solid $accent-lt-orange;
+  }
+}
+

@@ -1,0 +1,6 @@
+@mixin flex-aligning($disp: flex, $j-cont: space-between, $al-it: center) {
+  display: $disp;
+  justify-content: $j-cont;
+  align-items: $al-it;
+}
+

@@ -1,0 +1,19 @@
+.menu-btn {
+  @include flex-aligning();
+  flex-basis: 13%;
+}
+
+.menu-btn__cart,
+.menu-btn__search {
+  @extend %button;
+  width: 18px;
+}
+
+.menu-btn__icon {
+  fill: $primary-white;
+
+  &:hover,
+  &:focus {
+    fill: $accent-lt-orange;
+  }
+}
